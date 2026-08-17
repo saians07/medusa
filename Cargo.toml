@@ -2,5 +2,18 @@
 resolver = "3"
 members = ["garuda", "kirin"]
 
+[workspace.package]
+name = "medusa"
+version = "0.1.0"
+authors = ["Suberlin Sinaga <suberlinsinaga@gmail.com>"]
+edition = "2024"
+
 [workspace.dependencies]
 tokio = { version = "1.53.1", features = ["rt-multi-thread", "macros", "signal"] }
+async-trait = "0.1.92"
+chrono = { version = "0.4.45", features = ["serde"] }
+tokio-cron-scheduler = "0.15.1"
+tokio-signal = "0.2.9"
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }
+argus = { git = "ssh://git@github.com/saians07/argus.git", branch = "master" , features = ["logs"]}
