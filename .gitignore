@@ -1,7 +1,14 @@
-autis
-trading_strategy
-ccxt_rs
+.env
 target
-queen
-alip
-learning
+
+# executor engine: binary
+/garuda
+
+# market gateway, has its own structure
+/hydra
+
+# strategy (brain)
+/kirin
+
+# sidecar, has its own workspace
+/argus
